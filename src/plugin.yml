@@ -1,0 +1,20 @@
+main: net.enchantedoasis.mining.MiningExpertise
+version: 1.0.0
+name: MiningExpertise
+commands:
+   mining:
+      description: Adding mining items.
+      usage: /<command>
+   ingot:
+      description: Adding mining items.
+      usage: /<command>
+   miningexpertise:
+      description: Adding mining items.
+      usage: /<command>
+permissions:
+    miningexpertise.autosmelt:
+      description: Smelt ores
+      default: op
+    miningexpertise.spawner:
+        description: Permits to bypass time limit
+        default: op

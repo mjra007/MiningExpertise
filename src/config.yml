@@ -1,0 +1,29 @@
+OresIngot:
+  IRON_ORE: IRON_INGOT
+  IRON_GOLD: IRON_INGOT
+Chest:
+  BloodMagic:
+    Legendary:
+    - AWWAYOFTIME_RUNEOFSELFSACRIFICE/0-1
+    Rare:
+    Common:
+  Thaumcraft:
+    Legendary:
+    Rare:
+    Common:
+  Botania:
+    Legendary:
+    Rare:
+    Common:
+  ArsMagica2:
+    Legendary:
+    Rare:
+    Common:
+  Witchery:
+    Legendary:
+    Rare:
+    Common:
+  Forestry:
+    Legendary:
+    Rare:
+    Common:
