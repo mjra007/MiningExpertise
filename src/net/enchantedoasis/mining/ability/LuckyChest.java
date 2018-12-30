@@ -65,6 +65,14 @@ public class LuckyChest extends Ability {
 		}
 	}
 
+        public ArrayList<ItemList> getAllItems(){
+            ArrayList<ItemList> allItems = new ArrayList<ItemList>();
+            allItems.addAll(rare);
+            allItems.addAll(common);
+            allItems.addAll(legendary);
+            return allItems;
+        }
+        
 	public void chestBuilder(Inventory chest) {
 		for (int i = 0; i < this.items.size(); i++) {
 			ItemStack current = (ItemStack) this.items.get(i);

@@ -3,6 +3,9 @@ package net.enchantedoasis.mining;
 import java.util.ArrayList;
 import java.util.HashMap;
 import net.enchantedoasis.mining.GUI.Ability.AbilityMenuHandler;
+import net.enchantedoasis.mining.GUI.Editor.GUIEH;
+import net.enchantedoasis.mining.GUI.LuckyChests.ChanceMenuHandler;
+import net.enchantedoasis.mining.GUI.LuckyChests.LuckyChestMenuHandler;
 import net.enchantedoasis.mining.ability.AutoSmelt;
 import net.enchantedoasis.mining.ability.LuckyChest;
 import net.enchantedoasis.mining.ability.Spawners;
@@ -43,8 +46,11 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
         createChests();
         createAutosmelt();
         createSpawners();
-        registerEvents(this, new Listener[]{new EventHandlers(), new AbilityMenuHandler(),
-            new net.enchantedoasis.mining.GUI.LuckyChests.LuckyChestMenuHandler(), new net.enchantedoasis.mining.GUI.LuckyChests.ChanceMenuHandler()});
+        registerEvents(this, new Listener[]{new EventHandlers()
+                , new AbilityMenuHandler(),
+            new LuckyChestMenuHandler(),
+            new ChanceMenuHandler(),
+            new GUIEH()});
         getCommand("mining").setExecutor(new net.enchantedoasis.mining.GUI.Ability.AbilityCommand());
 
         if (!setupEconomy()) {

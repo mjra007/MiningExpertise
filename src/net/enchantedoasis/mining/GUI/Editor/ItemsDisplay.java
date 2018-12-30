@@ -12,6 +12,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 /**
  *
@@ -58,14 +59,32 @@ public class ItemsDisplay implements IGUI {
         Inventory GUI = Bukkit.createInventory(this, size, name);
         
         for(int index=0;index<size-4;index++){
-            GUI.setItem(index, items.get(index).toItemStack());
+            if(index <items.size()){
+                GUI.setItem(index, items.get(index).toItemStack());
+            }
         }
         
-        GUI.setItem(53, new ItemStack(Material.GLASS,1,(short)14));
-        GUI.setItem(52, new ItemStack(Material.ACTIVATOR_RAIL,1)); 
-        GUI.setItem(51, new ItemStack(Material.RAILS,1));
+        ItemStack deleteButton = new ItemStack(Material.GLASS,1,(short)14);
+        ItemStack increaseButton = new ItemStack(Material.ACTIVATOR_RAIL,1);
+        ItemStack decreaseButton =  new ItemStack(Material.RAILS,1);
+        
+        deleteButton = changeNameItemStack(deleteButton, "Delete Item");
+        increaseButton = changeNameItemStack(increaseButton, "Increase Stack");
+        decreaseButton = changeNameItemStack(decreaseButton, "Decrease Stack");
+
+        GUI.setItem(53, deleteButton);
+        GUI.setItem(52, increaseButton); 
+        GUI.setItem(51,decreaseButton);
         GUI.setItem(50, new ItemStack(Material.ARROW,1));
+        
         return GUI;
+    }
+    
+    private ItemStack changeNameItemStack(ItemStack stack, String name){
+        ItemMeta meta = stack.getItemMeta();
+        meta.setDisplayName(name);
+        stack.setItemMeta(meta);
+        return stack;
     }
     
     private void activateDelete(){
@@ -93,7 +112,7 @@ public class ItemsDisplay implements IGUI {
                    item.getDurability()==stack.getDurability()){
               
                if(delete){
-                   items.remove(item);
+                   items.set(index, new ItemList(Material.AIR, (short)0,(short)1));
                }else if(decrease) {
                     item.setQuantity((short)(item.getQuantity()-1));
                     items.set(index, item);
@@ -103,5 +122,10 @@ public class ItemsDisplay implements IGUI {
                }
            }
        }
+    }
+    
+    public void openInventory(Player player)
+    {
+        player.openInventory(getInventory());
     }
 }
