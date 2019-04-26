@@ -6,6 +6,7 @@
 package net.enchantedoasis.mining.GUI.Editor;
 
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryAction;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 
@@ -14,6 +15,7 @@ import org.bukkit.inventory.ItemStack;
  * @author micae
  */
 public interface IGUI extends InventoryHolder{
-    public void onGUIClick(Player whoClicked, int slot, ItemStack clickedItem);
+    public void onGUIClick(Player whoClicked, int slot, ItemStack clickedItem
+            , InventoryAction action);
 }
 

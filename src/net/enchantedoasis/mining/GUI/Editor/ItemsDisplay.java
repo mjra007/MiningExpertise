@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package net.enchantedoasis.mining.GUI.Editor;
 
 import java.util.ArrayList;
-import net.enchantedoasis.mining.ItemList;
+import net.enchantedoasis.mining.WeightedItemStack;
+import net.enchantedoasis.mining.WeightedList;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryAction;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -21,35 +18,65 @@ import org.bukkit.inventory.meta.ItemMeta;
 public class ItemsDisplay implements IGUI {
 
     private final String name;
-    private ArrayList<ItemList> items;
-    private Boolean increase = true;
-    private Boolean decrease =true;
+    private ArrayList<WeightedItemStack> items;
+    private Boolean weightsORstacksize = true;
+    private Boolean increase = false;
+    private Boolean decrease =false;
     private Boolean delete = false;
-    
-    public ItemsDisplay(String name, ArrayList<ItemList> items){
+    private final int DECREASE_BUTTON_INDEX = 51;
+    private final int INCREASE_BUTTON_INDEX = 52;
+    private final int DELETE_BUTTON_INDEX = 53;
+    private final int WEIGHTS_OR_STACK_SIZE_INDEX = 50;
+
+    public ItemsDisplay(String name, ArrayList<WeightedItemStack> items){
         this.name = name;
-        this.items=items;
+        this.items = items;
     }
     
     @Override
-    public void onGUIClick(Player whoClicked, int slot, ItemStack clickedItem) {
+    public void onGUIClick(Player whoClicked, int slot, ItemStack clickedItem
+            , InventoryAction action) {
+        
+        //Checks whether an item was dragged into the inventory
+        //Adds item to item list and forces gui refresh
+        if (action == InventoryAction.DROP_ALL_CURSOR 
+                || action== InventoryAction.DROP_ALL_SLOT
+                || action == InventoryAction.DROP_ONE_CURSOR 
+                || action == InventoryAction.DROP_ONE_SLOT){
+            
+            ItemStack itemInPlayersHand = whoClicked.getItemInHand();
+            
+            WeightedItemStack item = new WeightedItemStack(itemInPlayersHand.getType(),
+                    itemInPlayersHand.getDurability(),
+                    Integer.valueOf(itemInPlayersHand.getAmount()).shortValue());
+            
+            items.add(item);
+            whoClicked.openInventory(getInventory());
+            return;
+        }
+        
         if (clickedItem == null || clickedItem.getType().equals(Material.AIR)) {
             return;
         }
+        
         switch (slot) {
-            case 53:
+            case DELETE_BUTTON_INDEX:
                 activateDelete();
                 break;
-            case 52:
+            case INCREASE_BUTTON_INDEX:
                 activateIncrease();
                 break;
-            case 51:
+            case DECREASE_BUTTON_INDEX:
                 activateDecrease();
+                break;
+            case WEIGHTS_OR_STACK_SIZE_INDEX:
+                activateWeightsOrStackSize();
                 break;
             default:
                 processItemListClick(clickedItem);
                 break;
         }
+        
         whoClicked.openInventory(getInventory());
     }
 
@@ -88,13 +115,13 @@ public class ItemsDisplay implements IGUI {
     }
     
     private void activateDelete(){
-        increase=false;
-        delete=false;
+        increase= false;
+        delete= false;
         decrease = false;
     }
     private void activateIncrease(){
         increase=true;
-        delete=false;
+        delete= false;
         decrease = false;
     }
     private void activateDecrease(){
@@ -102,23 +129,36 @@ public class ItemsDisplay implements IGUI {
         delete=false;
         decrease = true;
     }
+    
+    private void activateWeightsOrStackSize(){
+        this.weightsORstacksize = !weightsORstacksize;
+    }
 
     private void processItemListClick(ItemStack stack) {
        for(int index=0;index<items.size();index++){
            
-            ItemList item = items.get(index);
+            WeightedItemStack item = items.get(index);
             
            if(item.getMaterial() ==stack.getType() && 
                    item.getDurability()==stack.getDurability()){
               
                if(delete){
-                   items.set(index, new ItemList(Material.AIR, (short)0,(short)1));
+                   items.set(index, new WeightedItemStack(Material.AIR, (short)0,(short)1));
                }else if(decrease) {
-                    item.setQuantity((short)(item.getQuantity()-1));
-                    items.set(index, item);
+                   if(weightsORstacksize){
+                    item.setWeight((item.getQuantity()-1));
+                    items.set(index, item);           
+                   }else{
+                     item.setQuantity((short)(item.getQuantity()-1));
+                    items.set(index, item);  
+                   }
                }else if (increase){
-                   item.setQuantity((short)(item.getQuantity()+1));
-                    items.set(index, item);
+                    item.setWeight((item.getQuantity()+1));
+                    items.set(index, item);           
+                   }else{
+                     item.setQuantity((short)(item.getQuantity()+1));
+                    items.set(index, item);  
+                   }
                }
            }
        }

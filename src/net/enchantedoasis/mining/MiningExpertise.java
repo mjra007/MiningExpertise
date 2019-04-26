@@ -148,21 +148,21 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
                 + "kinds of loot in them while mining" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, getObjectConfig("Chest.Botania.Legendary"), getObjectConfig("Chest.Botania.Common"),
                 getObjectConfig("Chest.Botania.Rare"), 3, 10);
 
-        ArrayList<ItemList> common = MergeItemLists(getObjectConfig("Chest.Forestry.Common"),
+        ArrayList<WeightedItemStack> common = MergeItemLists(getObjectConfig("Chest.Forestry.Common"),
                 getObjectConfig("Chest.BloodMagic.Common"),
                 getObjectConfig("Chest.Thaumcraft.Common"),
                 getObjectConfig("Chest.Witchery.Common"),
                 getObjectConfig("Chest.ArsMagica.Common"),
                 getObjectConfig("Chest.Botania.Common"));
 
-        ArrayList<ItemList> rare = MergeItemLists(getObjectConfig("Chest.Forestry.Rare"),
+        ArrayList<WeightedItemStack> rare = MergeItemLists(getObjectConfig("Chest.Forestry.Rare"),
                 getObjectConfig("Chest.BloodMagic.Rare"),
                 getObjectConfig("Chest.Thaumcraft.Rare"),
                 getObjectConfig("Chest.Witchery.Rare"),
                 getObjectConfig("Chest.ArsMagica.Rare"),
                 getObjectConfig("Chest.Botania.Rare"));
 
-        ArrayList<ItemList> legendary = MergeItemLists(getObjectConfig("Chest.Forestry.Legendary"),
+        ArrayList<WeightedItemStack> legendary = MergeItemLists(getObjectConfig("Chest.Forestry.Legendary"),
                 getObjectConfig("Chest.BloodMagic.Legendary"),
                 getObjectConfig("Chest.Thaumcraft.Legendary"),
                 getObjectConfig("Chest.Witchery.Legendary"),
@@ -175,11 +175,11 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
                 rare, 3, 10);
     }
 
-    public ArrayList<ItemList> MergeItemLists(ArrayList<ItemList>... lists) {
-        ArrayList<ItemList> newList = new ArrayList();
+    public ArrayList<WeightedItemStack> MergeItemLists(ArrayList<WeightedItemStack>... lists) {
+        ArrayList<WeightedItemStack> newList = new ArrayList();
 
-        for (ArrayList<ItemList> list : lists) {
-            for (ItemList item : list) {
+        for (ArrayList<WeightedItemStack> list : lists) {
+            for (WeightedItemStack item : list) {
                 if (!newList.contains(item)) {
                     newList.add(item);
                 }
@@ -197,8 +197,8 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
         return ores;
     }
 
-    public ArrayList<ItemList> getObjectConfig(String path) {
-        ArrayList<ItemList> items = new ArrayList();
+    public ArrayList<WeightedItemStack> getObjectConfig(String path) {
+        ArrayList<WeightedItemStack> items = new ArrayList();
 
         for (String key : getConfig().getStringList(path)) {
             if (key.contains("/")) {
@@ -213,7 +213,7 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
                             quantity = Short.valueOf(quantityL[1]);
                         }
                     }
-                    items.add(new ItemList(item, durability,quantity));
+                    items.add(new WeightedItemStack(item, durability,quantity));
                 }
             }
         }

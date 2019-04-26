@@ -5,7 +5,7 @@ import java.util.List;
 import net.enchantedoasis.mining.Ability;
 import net.enchantedoasis.mining.CommonUTIL;
 import net.enchantedoasis.mining.GUI.Ability.AbilityMenu;
-import net.enchantedoasis.mining.ItemList;
+import net.enchantedoasis.mining.WeightedItemStack;
 import net.enchantedoasis.userData.User;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -19,16 +19,16 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 public class LuckyChest extends Ability {
-	private ArrayList<ItemList> legendary = new ArrayList();
-	private ArrayList<ItemList> common = new ArrayList();
-	private ArrayList<ItemList> rare = new ArrayList();
+	private ArrayList<WeightedItemStack> legendary = new ArrayList();
+	private ArrayList<WeightedItemStack> common = new ArrayList();
+	private ArrayList<WeightedItemStack> rare = new ArrayList();
 	private List<ItemStack> items = new ArrayList();
 	public static List<Location> chests = new ArrayList();
 	Integer noOfItems;
 	Integer chanceOf;
 
-	public LuckyChest(String n, String d, Material icon, ArrayList<ItemList> l, ArrayList<ItemList> c,
-			ArrayList<ItemList> r, Integer no, Integer chance) {
+	public LuckyChest(String n, String d, Material icon, ArrayList<WeightedItemStack> l, ArrayList<WeightedItemStack> c,
+			ArrayList<WeightedItemStack> r, Integer no, Integer chance) {
 		super(n, d, icon);
 		this.common = c;
 		this.legendary = l;
@@ -48,11 +48,11 @@ public class LuckyChest extends Ability {
 		return this.items;
 	}
 
-	public void getItems(Integer noLoop, Integer random, Integer maxStack, ArrayList<ItemList> list) {
+	public void getItems(Integer noLoop, Integer random, Integer maxStack, ArrayList<WeightedItemStack> list) {
             	System.out.println("Size: "+list.size() + " "+this.getName());
 		for (int i = 1; i < noLoop; i++) {
 			if (CommonUTIL.getRandom(0, 100) < random.intValue()) {
-				ItemList item = (ItemList) list.get(CommonUTIL.getRandom(0, list.size()));
+				WeightedItemStack item = (WeightedItemStack) list.get(CommonUTIL.getRandom(0, list.size()));
 				Material randomMaterial = item.getMaterial();
 				Short damage = item.getDurability();
 				Bukkit.getLogger().info("item " + randomMaterial);
@@ -65,8 +65,8 @@ public class LuckyChest extends Ability {
 		}
 	}
 
-        public ArrayList<ItemList> getAllItems(){
-            ArrayList<ItemList> allItems = new ArrayList<ItemList>();
+        public ArrayList<WeightedItemStack> getAllItems(){
+            ArrayList<WeightedItemStack> allItems = new ArrayList<WeightedItemStack>();
             allItems.addAll(rare);
             allItems.addAll(common);
             allItems.addAll(legendary);

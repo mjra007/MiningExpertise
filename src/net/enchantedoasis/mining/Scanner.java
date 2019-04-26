@@ -1,4 +1,4 @@
- package net.enchantedoasis.mining;
+package net.enchantedoasis.mining;
  
  import java.io.PrintStream;
 import java.util.ArrayList;
@@ -8,6 +8,7 @@ import java.util.ArrayList;
  import java.util.Map.Entry;
  import org.bukkit.Location;
  import org.bukkit.Material;
+import org.bukkit.block.Chest;
  import org.bukkit.inventory.Inventory;
  import org.bukkit.inventory.ItemStack;
  
@@ -22,7 +23,7 @@ import java.util.ArrayList;
      this.path = args[0];
      this.loc = circle(loc1, 5);
      if (!this.loc.equals(null)) {
-       org.bukkit.block.Chest chest = (org.bukkit.block.Chest)this.loc.getBlock().getState();
+       Chest chest = (Chest)this.loc.getBlock().getState();
        this.inv = chest.getInventory();
        System.out.print("Found a chest");
      } else {
@@ -43,6 +44,10 @@ import java.util.ArrayList;
      for (int i = 0; i < this.inv.getSize(); i++) {
        try {
          ItemStack is = this.inv.getItem(i);
+         
+         
+         
+         
          List<Short> data = new java.util.ArrayList();
          System.out.print(is.getType() + " " + is.getDurability());
          

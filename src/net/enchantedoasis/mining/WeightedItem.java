@@ -3,18 +3,30 @@ package net.enchantedoasis.mining;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
-public class ItemList {
+public class WeightedItemStack {
 
     Material material;
     Short durability;
     Short quantity;
+    Integer weight;
 
-    public ItemList(Material m, Short d, Short quantity) {
+    public WeightedItemStack(Material m, Short d, Short quantity) {
         this.material = m;
         this.durability = d;
         this.quantity = quantity;
+        this.weight = 1;
     }
-
+    public WeightedItemStack(Material m, Short d, Short quantity, Integer weight ) {
+        this.material = m;
+        this.durability = d;
+        this.quantity = quantity;
+        this.weight = weight;
+    }
+    
+    public Integer getWeight() {
+        return weight;
+    }
+    
     public Material getMaterial() {
         return this.material;
     }
@@ -27,6 +39,10 @@ public class ItemList {
         this.quantity=quantity;
     }
 
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+    
     public Short getQuantity(){
         return this.quantity;
     }
@@ -42,11 +58,11 @@ public class ItemList {
             return true;
         }
 
-        if (!(o instanceof ItemList)) {
+        if (!(o instanceof WeightedItemStack)) {
             return false;
         }
 
-        ItemList itemList = (ItemList) o;
+        WeightedItemStack itemList = (WeightedItemStack) o;
 
         return itemList.material.equals(material);
     }

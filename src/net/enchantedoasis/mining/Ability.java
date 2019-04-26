@@ -23,7 +23,6 @@
      this.icon = icon2;
      abilities.put(this.id, this);
      counter = Integer.valueOf(counter.intValue() + 1);
-     toString();
    }
    
    public static HashMap<Integer, Ability> getAbilitiesList() {

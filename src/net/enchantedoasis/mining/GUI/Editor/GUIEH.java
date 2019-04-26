@@ -1,19 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package net.enchantedoasis.mining.GUI.Editor;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
-import org.bukkit.inventory.ItemStack;
 
 /**
  *
- * @author micae
+ * @author micael
  */
 public class GUIEH implements Listener{
 
@@ -22,7 +16,7 @@ public class GUIEH implements Listener{
         if(e.getInventory().getHolder() instanceof IGUI) {
             e.setCancelled(true);
             IGUI gui = (IGUI) e.getInventory().getHolder();
-            gui.onGUIClick((Player)e.getWhoClicked(), e.getRawSlot(), e.getCurrentItem());
+            gui.onGUIClick((Player)e.getWhoClicked(), e.getRawSlot(), e.getCurrentItem(), e.getAction());
         }  
     }
 }
