@@ -1,5 +1,6 @@
  package net.enchantedoasis.mining.ability;
  
+import com.google.gson.annotations.Expose;
  import java.util.HashMap;
  import net.enchantedoasis.mining.Ability;
  import net.enchantedoasis.userData.User;
@@ -15,11 +16,12 @@
  
  public class AutoSmelt extends Ability
  {
-   HashMap<Material, Material> list = new HashMap();
+   @Expose
+   public HashMap<String, String> ingotByOre = new HashMap();
    
-   public AutoSmelt(String n, String d, Material icon2, HashMap<Material, Material> ores) {
+   public AutoSmelt(String n, String d, String icon2, HashMap<String, String> ores) {
      super(n, d, icon2);
-     this.list = ores;
+     this.ingotByOre = ores;
    }
    
    public void clicked(Player p, String permission) {
@@ -73,10 +75,10 @@
      ItemStack item = player.getItemInHand();
      Material itemType = item.getType();
      String materialName = itemType.toString();
-     if ((this.list.containsKey(mined.getType())) && (materialName.contains("PICK"))) {
+     if ((this.ingotByOre.containsKey(mined.getType().toString().toUpperCase())) && (materialName.contains("PICK"))) {
        Location loc = mined.getLocation();
        isThereDangerousBlock(loc);
-       Material ingot = (Material)this.list.get(blocktype);
+       Material ingot = Material.getMaterial(this.ingotByOre.get(blocktype.toString().toUpperCase()));
        mined.setType(Material.AIR);
        mined.getWorld().dropItemNaturally(loc, new ItemStack(ingot, 1));
        player.giveExp(1);

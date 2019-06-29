@@ -1,14 +1,26 @@
 package net.enchantedoasis.mining;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import guava10.com.google.common.collect.ImmutableList;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import net.enchantedoasis.mining.GUI.Ability.AbilityMenuHandler;
 import net.enchantedoasis.mining.GUI.Editor.GUIEH;
 import net.enchantedoasis.mining.GUI.LuckyChests.ChanceMenuHandler;
 import net.enchantedoasis.mining.GUI.LuckyChests.LuckyChestMenuHandler;
 import net.enchantedoasis.mining.ability.AutoSmelt;
 import net.enchantedoasis.mining.ability.LuckyChest;
-import net.enchantedoasis.mining.ability.Spawners;
+import net.enchantedoasis.mining.ability.LuckyDrop;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
 import org.bukkit.Bukkit;
@@ -23,34 +35,43 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 
 public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
 
-    public static LuckyChest bloodMagic = null;
-    public static LuckyChest thaumcraft = null;
-    public static LuckyChest witchery = null;
-    public static LuckyChest arsMagica = null;
-    public static LuckyChest botania = null;
-    public static LuckyChest forestry = null;
-    public static LuckyChest random;
-    public static AutoSmelt autosmelt = null;
     public static Economy econ = null;
     public static String defaultsymbol = ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] "
             + ChatColor.RESET;
-    public static Plugin p;
-    public static Spawners spawners = null;
+    public static MiningExpertise instance;
     public static Permission permission = null;
+    final Gson gson = new GsonBuilder()
+            .excludeFieldsWithoutExposeAnnotation()
+            .setPrettyPrinting()
+            .create();
+    private File configFile;
+    public Config config;
 
     @Override
     public void onEnable() {
-        p = this;
+        configFile = new File(getDataFolder(), "config.json");
         loadConfiguration();
+
+        if (!configFile.exists()) {
+            saveResource(configFile.getName(), false);
+        }
+        try {
+            config = gson.fromJson(new FileReader(configFile), Config.class);
+        } catch (FileNotFoundException ex) {
+        }
+       
+        String json = gson.toJson(config, Config.class); // Remember pretty printing? This is needed here.
+        
+        instance = this;
         setupPermissions();
-        createChests();
-        createAutosmelt();
-        createSpawners();
-        registerEvents(this, new Listener[]{new EventHandlers()
-                , new AbilityMenuHandler(),
+
+        registerEvents(this, new Listener[]{new EventHandlers(),
+            new AbilityMenuHandler(),
             new LuckyChestMenuHandler(),
+            new LuckyDrop(),
             new ChanceMenuHandler(),
             new GUIEH()});
+
         getCommand("mining").setExecutor(new net.enchantedoasis.mining.GUI.Ability.AbilityCommand());
 
         if (!setupEconomy()) {
@@ -62,6 +83,18 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
 
     @Override
     public void onDisable() {
+        ClearLuckyChests();
+        String json = gson.toJson(config, Config.class); // Remember pretty printing? This is needed here.
+        configFile.delete(); // won't throw an exception, don't worry.
+
+        try {
+            Files.write(configFile.toPath(), json.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.WRITE); // java.nio.Files
+        } catch (IOException ex) {
+            //    Logger.getLogger(TwilightForestBossTweak.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    private void ClearLuckyChests() {
         for (int i = 0; i < LuckyChest.chests.size(); i++) {
             Location loc = (Location) LuckyChest.chests.get(i);
             if ((loc.getBlock() instanceof Chest)) {
@@ -109,72 +142,6 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
         }
     }
 
-    public void createAutosmelt() {
-        autosmelt = new AutoSmelt("AutoSmelt",
-                ChatColor.GRAY + "Smelts your ores instantly" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.GREEN + " VIP" + ChatColor.YELLOW + "+", Material.COAL_ORE, getOresMaterial());
-    }
-
-    public void createSpawners() {
-        spawners = new Spawners("Spawner",
-                ChatColor.GRAY + "Break spawners with your average pickaxe" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.AQUA + " MVP", Material.MOB_SPAWNER);
-    }
-
-    @SuppressWarnings("unchecked")
-    public void createChests() {
-        forestry = new LuckyChest("Forestry",
-                ChatColor.GRAY + "Find chests with different" + "\n" + ChatColor.GRAY
-                + "kinds of loot in them while mining" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, getObjectConfig("Chest.Forestry.Legendary"), getObjectConfig("Chest.Forestry.Common"),
-                getObjectConfig("Chest.Forestry.Rare"), 2, 10);
-
-        bloodMagic = new LuckyChest("BloodMagic",
-                ChatColor.GRAY + "Find chests with different" + "\n" + ChatColor.GRAY
-                + "kinds of loot in them while mining" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, getObjectConfig("Chest.BloodMagic.Legendary"), getObjectConfig("Chest.BloodMagic.Common"),
-                getObjectConfig("Chest.BloodMagic.Rare"), 2, 10);
-
-        thaumcraft = new LuckyChest("Thaumcraft",
-                ChatColor.GRAY + "Find chests with different" + "\n" + ChatColor.GRAY
-                + "kinds of loot in them while mining" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, getObjectConfig("Chest.Thaumcraft.Legendary"), getObjectConfig("Chest.Thaumcraft.Common"),
-                getObjectConfig("Chest.Thaumcraft.Rare"), 3, 10);
-        witchery = new LuckyChest("Witchery",
-                ChatColor.GRAY + "Find chests with different" + "\n" + ChatColor.GRAY
-                + "kinds of loot in them while mining" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, getObjectConfig("Chest.Witchery.Legendary"), getObjectConfig("Chest.Witchery.Common"),
-                getObjectConfig("Chest.Witchery.Rare"), 3, 10);
-        arsMagica = new LuckyChest("ArsMagica",
-                ChatColor.GRAY + "Find chests with different" + "\n" + ChatColor.GRAY
-                + "kinds of loot in them while mining" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, getObjectConfig("Chest.ArsMagica.Legendary"), getObjectConfig("Chest.ArsMagica.Common"),
-                getObjectConfig("Chest.ArsMagica.Rare"), 3, 10);
-        botania = new LuckyChest("Botania",
-                ChatColor.GRAY + "Find chests with different" + "\n" + ChatColor.GRAY
-                + "kinds of loot in them while mining" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, getObjectConfig("Chest.Botania.Legendary"), getObjectConfig("Chest.Botania.Common"),
-                getObjectConfig("Chest.Botania.Rare"), 3, 10);
-
-        ArrayList<WeightedItemStack> common = MergeItemLists(getObjectConfig("Chest.Forestry.Common"),
-                getObjectConfig("Chest.BloodMagic.Common"),
-                getObjectConfig("Chest.Thaumcraft.Common"),
-                getObjectConfig("Chest.Witchery.Common"),
-                getObjectConfig("Chest.ArsMagica.Common"),
-                getObjectConfig("Chest.Botania.Common"));
-
-        ArrayList<WeightedItemStack> rare = MergeItemLists(getObjectConfig("Chest.Forestry.Rare"),
-                getObjectConfig("Chest.BloodMagic.Rare"),
-                getObjectConfig("Chest.Thaumcraft.Rare"),
-                getObjectConfig("Chest.Witchery.Rare"),
-                getObjectConfig("Chest.ArsMagica.Rare"),
-                getObjectConfig("Chest.Botania.Rare"));
-
-        ArrayList<WeightedItemStack> legendary = MergeItemLists(getObjectConfig("Chest.Forestry.Legendary"),
-                getObjectConfig("Chest.BloodMagic.Legendary"),
-                getObjectConfig("Chest.Thaumcraft.Legendary"),
-                getObjectConfig("Chest.Witchery.Legendary"),
-                getObjectConfig("Chest.ArsMagica.Legendary"),
-                getObjectConfig("Chest.Botania.Legendary"));
-
-        random = new LuckyChest("Random",
-                ChatColor.GRAY + "Find chests with different" + "\n" + ChatColor.GRAY
-                + "kinds of loot in them while mining. Includes all LC mods' loot" + "\n" + "\n" + ChatColor.DARK_GRAY + "Requires" + ChatColor.RED + " DONOR RANK", Material.CHEST, legendary, common,
-                rare, 3, 10);
-    }
-
     public ArrayList<WeightedItemStack> MergeItemLists(ArrayList<WeightedItemStack>... lists) {
         ArrayList<WeightedItemStack> newList = new ArrayList();
 
@@ -188,15 +155,6 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
         return newList;
     }
 
-    public HashMap<Material, Material> getOresMaterial() {
-        HashMap<Material, Material> ores = new HashMap();
-        for (String key : getConfig().getConfigurationSection("OresIngot").getKeys(false)) {
-            String ingot = getConfig().getString("OresIngot." + key);
-            ores.put(Material.getMaterial(key), Material.getMaterial(ingot));
-        }
-        return ores;
-    }
-
     public ArrayList<WeightedItemStack> getObjectConfig(String path) {
         ArrayList<WeightedItemStack> items = new ArrayList();
 
@@ -207,21 +165,168 @@ public class MiningExpertise extends org.bukkit.plugin.java.JavaPlugin {
                 for (int i = 1; i < allData.length; i++) {
                     Short durability = Short.valueOf(allData[i]);
                     Short quantity = 1;
-                    if(key.contains("-")){
+                    if (key.contains("-")) {
                         String[] quantityL = key.split("-");
-                        if(quantityL.length>1){
+                        if (quantityL.length > 1) {
                             quantity = Short.valueOf(quantityL[1]);
                         }
                     }
-                    items.add(new WeightedItemStack(item, durability,quantity));
+                    items.add(new WeightedItemStack(item.toString(), durability, quantity));
                 }
             }
         }
         return items;
     }
 
+    public void changeToOldValues() {
+
+        ArrayList<WeightedItemStack> bloodMagicL
+                = getObjectConfig("Chest.BloodMagic.Legendary");
+        ArrayList<WeightedItemStack> bloodMagicR
+                = getObjectConfig("Chest.BloodMagic.Rare");
+        ArrayList<WeightedItemStack> bloodMagicC
+                = getObjectConfig("Chest.BloodMagic.Common");
+        
+        bloodMagicL.forEach(s->s.setWeight(10));
+        bloodMagicR.forEach(s->s.setWeight(35));
+        bloodMagicC.forEach(s->s.setWeight(60));
+
+        ArrayList<WeightedItemStack> allItems = new ArrayList<>();
+        allItems.addAll(bloodMagicL);
+        allItems.addAll(bloodMagicR);
+        allItems.addAll(bloodMagicC);
+
+        config.getLuckyChest("BloodMagic").changeItems(allItems);
+        
+        ArrayList<WeightedItemStack> witcheryL
+                = getObjectConfig("Chest.Witchery.Legendary");
+        ArrayList<WeightedItemStack> witcheryR
+                = getObjectConfig("Chest.Witchery.Rare");
+        ArrayList<WeightedItemStack> witcheryC
+                = getObjectConfig("Chest.Witchery.Common");
+        
+        witcheryL.forEach(s->s.setWeight(10));
+        witcheryR.forEach(s->s.setWeight(35));
+        witcheryC.forEach(s->s.setWeight(60));
+        
+        ArrayList<WeightedItemStack> allItemsW = new ArrayList<>();
+        allItemsW.addAll(witcheryL);
+        allItemsW.addAll(witcheryR);
+        allItemsW.addAll(witcheryC);
+        
+        
+        config.getLuckyChest("Witchery").changeItems(allItemsW);
+
+        
+        ArrayList<WeightedItemStack> arsmagica2L
+                = getObjectConfig("Chest.ArsMagica2.Legendary");
+        ArrayList<WeightedItemStack> arsmagica2R
+                = getObjectConfig("Chest.ArsMagica2.Rare");
+        ArrayList<WeightedItemStack> arsmagica2C
+                = getObjectConfig("Chest.ArsMagica2.Common");
+        
+        arsmagica2L.forEach(s->s.setWeight(10));
+        arsmagica2R.forEach(s->s.setWeight(35));
+        arsmagica2C.forEach(s->s.setWeight(60));
+        
+        ArrayList<WeightedItemStack> allItemsAM = new ArrayList<>();
+        allItemsAM.addAll(arsmagica2L);
+        allItemsAM.addAll(arsmagica2R);
+        allItemsAM.addAll(arsmagica2C);
+        
+        
+        config.getLuckyChest("ArsMagica").changeItems(allItemsAM);
+
+        
+        ArrayList<WeightedItemStack> botaniaL
+                = getObjectConfig("Chest.Botania.Legendary");
+        ArrayList<WeightedItemStack> botaniaR
+                = getObjectConfig("Chest.Botania.Rare");
+        ArrayList<WeightedItemStack> botaniaC
+                = getObjectConfig("Chest.Botania.Common");
+      
+        botaniaL.forEach(s->s.setWeight(10));
+        botaniaR.forEach(s->s.setWeight(35));
+        botaniaC.forEach(s->s.setWeight(60));
+        
+        ArrayList<WeightedItemStack> allItemsBotania = new ArrayList<>();
+        allItemsBotania.addAll(botaniaL);
+        allItemsBotania.addAll(botaniaR);
+        allItemsBotania.addAll(botaniaC);
+        
+        
+        config.getLuckyChest("Botania").changeItems(allItemsBotania);
+
+        ArrayList<WeightedItemStack> thaumcraftL
+                = getObjectConfig("Chest.Thaumcraft.Legendary");
+        ArrayList<WeightedItemStack> thaumcraftR
+                = getObjectConfig("Chest.Thaumcraft.Rare");
+        ArrayList<WeightedItemStack> thaumcraftC
+                = getObjectConfig("Chest.Thaumcraft.Common");
+      
+        thaumcraftL.forEach(s->s.setWeight(10));
+        thaumcraftR.forEach(s->s.setWeight(35));
+        thaumcraftC.forEach(s->s.setWeight(60));
+        
+        ArrayList<WeightedItemStack> allItemsT = new ArrayList<>();
+        allItemsT.addAll(thaumcraftL);
+        allItemsT.addAll(thaumcraftR);
+        allItemsT.addAll(thaumcraftC);
+        
+        config.getLuckyChest("Thaumcraft").changeItems(allItemsT);
+
+        ArrayList<WeightedItemStack> forestryL
+                = getObjectConfig("Chest.Forestry.Legendary");
+        ArrayList<WeightedItemStack> forestryR
+                = getObjectConfig("Chest.Forestry.Rare");
+        ArrayList<WeightedItemStack> forestryc
+                = getObjectConfig("Chest.Forestry.Common");
+        
+        
+        forestryL.forEach(s->s.setWeight(10));
+        forestryR.forEach(s->s.setWeight(35));
+        forestryc.forEach(s->s.setWeight(60));
+        
+        ArrayList<WeightedItemStack> allItemsF = new ArrayList<>();
+        allItemsF.addAll(forestryL);
+        allItemsF.addAll(forestryR);
+        allItemsF.addAll(forestryc);
+        
+        config.getLuckyChest("Forestry").changeItems(allItemsF);
+     
+        
+        
+        forestryL.forEach(s->s.setWeight(10));
+        forestryR.forEach(s->s.setWeight(35));
+        forestryc.forEach(s->s.setWeight(60));
+        
+        ArrayList<WeightedItemStack> allItemsR = new ArrayList<>();
+        allItemsR.addAll(forestryL);
+        allItemsR.addAll(forestryR);
+        allItemsR.addAll(forestryc);
+        allItemsR.addAll(thaumcraftL);
+        allItemsR.addAll(thaumcraftR);
+        allItemsR.addAll(thaumcraftC);
+        allItemsR.addAll(botaniaL);
+        allItemsR.addAll(botaniaR);
+        allItemsR.addAll(botaniaC);
+        allItemsR.addAll(arsmagica2L);
+        allItemsR.addAll(arsmagica2R);
+        allItemsR.addAll(arsmagica2C);
+        allItemsR.addAll(witcheryL);
+        allItemsR.addAll(witcheryR);
+        allItemsR.addAll(witcheryC);
+        allItemsR.addAll(bloodMagicL);
+        allItemsR.addAll(bloodMagicR);
+        allItemsR.addAll(bloodMagicC);
+        
+        config.getLuckyChest("Random").changeItems(allItemsR);
+        
+    }
+
     public void loadConfiguration() {
         getConfig().options().copyDefaults(true);
         saveConfig();
     }
+
 }

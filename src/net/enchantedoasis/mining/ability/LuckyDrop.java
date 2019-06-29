@@ -1,7 +1,6 @@
 package net.enchantedoasis.mining.ability;
 
 
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Random;
 import java.util.UUID;
@@ -19,7 +18,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityChangeBlockEvent;
 
-import net.enchantedoasis.mining.Ability;
+import net.enchantedoasis.mining.MiningExpertise;
  
 
 public  class LuckyDrop implements Listener{
@@ -30,7 +29,7 @@ public  class LuckyDrop implements Listener{
 	//	Player player = getRandomPlayer();
 		Location location = getRandomLocation(getRandomChunk());
         Bukkit.broadcastMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] "
-        		+ ChatColor.GRAY + " was A LuckyDrop has spawn at "+location.getBlockX()+", "+location.getBlockZ()
+        		+ ChatColor.GRAY + "A LuckyDrop was spawn at x:"+location.getBlockX()+", y:"+location.getBlockZ()
         		+"! Sponsor: "+sponsor.getDisplayName());
 		spawnFallingBlock(location);
 	}
@@ -50,10 +49,11 @@ public  class LuckyDrop implements Listener{
 	    {
 	        Block blockWhereFallingLands = event.getBlock();
 	        blockWhereFallingLands.setType(Material.AIR);
-	        LuckyChest[] abilities = (LuckyChest[]) Ability.getAbilitiesList().values().stream()
+	        LuckyChest[] abilities = (LuckyChest[]) MiningExpertise.instance.config.luckyChests.stream()
 	        .filter(s ->s instanceof LuckyChest).toArray();
 	        LuckyChest luckyChest = abilities[random.nextInt(abilities.length)];
 	        luckyChest.spawnChest(blockWhereFallingLands);
+                System.out.println("Sponsor block was changed so what the hell is going on");
 	    }
 	}
 	

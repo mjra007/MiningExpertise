@@ -1,0 +1,3694 @@
+{
+  "luckyChests": [
+    {
+      "number_of_items_to_spawn_in_chest": 14,
+      "chance_of_chest_spawning": 10,
+      "chest_items": [
+        {
+          "materialName": "AWWAYOFTIME_RUNEOFSELFSACRIFICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOCKCRYSTALBELLJAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOODSOCKET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_DEMONBLOODSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_MASTERSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_ALCHEMICALWIZARDRYBLOODRUNE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_RUNEOFSACRIFICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "NETHER_STAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_DEMONICSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_SPEEDRUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_AETHER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_MAGICALES",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_INCENDIUM",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_TENNEBRAE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_SANCTUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_TERRAE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_AQUASALUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_EMPTYSOCKET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_MUNDANEPOWERCATALYST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_RITUALSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_IMBUEDSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOODMAGICBASEALCHEMYITEMS",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOODMAGICBASEALCHEMYITEMS",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_MUNDANELENGTHENINGCATALYST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_WEAKBLOODSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_CRYSTALLOS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_SIMPLECATALYST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLANKSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_STANDARDBINDINGAGENT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_REINFORCEDSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_WEAKBINDINGAGENT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_ALCHEMICALWIZARDRYBLOODRUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "GUIDEAPI_ITEMGUIDEBOOK",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "GUIDEAPI_ITEMGUIDEBOOK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        }
+      ],
+      "name": "BloodMagic",
+      "description": "§7Find chests with different\n§7kinds of loot in them while mining\n\n§8Requires§c DONOR RANK",
+      "icon_In_GUI": "CHEST"
+    },
+    {
+      "number_of_items_to_spawn_in_chest": 3,
+      "chance_of_chest_spawning": 10,
+      "chest_items": [
+        {
+          "materialName": "FORBIDDENMAGIC_TAINTFRUIT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKJAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMICTINKERER_KAMIRESOURCE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMICTINKERER_KAMIRESOURCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKCUSTOMPLANT",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORBIDDENMAGIC_MOBCRYSTAL",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORBIDDENMAGIC_NETHERSHARD",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORBIDDENMAGIC_NETHERSHARD",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMBOTTLETAINT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMLOOTBAG",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_WANDCASTING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKCUSTOMPLANT",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMTHAUMONOMICON",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 18,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMLOOTBAG",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMZOMBIEBRAIN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_WANDCASTING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKCUSTOMPLANT",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMTHAUMONOMICON",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 18,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMLOOTBAG",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMZOMBIEBRAIN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        }
+      ],
+      "name": "Thaumcraft",
+      "description": "§7Find chests with different\n§7kinds of loot in them while mining\n\n§8Requires§c DONOR RANK",
+      "icon_In_GUI": "CHEST"
+    },
+    {
+      "number_of_items_to_spawn_in_chest": 3,
+      "chance_of_chest_spawning": 10,
+      "chest_items": [
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 19,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_SUPERTRAVELBELT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_DREAMWOOD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_OVERGROWTHSEED",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 16,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANATABLET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANAGUN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_OPENBUCKET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANACOOKIE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPREADER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 18,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANABOTTLE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FERTILIZER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 17,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        }
+      ],
+      "name": "Botania",
+      "description": "§7Find chests with different\n§7kinds of loot in them while mining\n\n§8Requires§c DONOR RANK",
+      "icon_In_GUI": "CHEST"
+    },
+    {
+      "number_of_items_to_spawn_in_chest": 3,
+      "chance_of_chest_spawning": 10,
+      "chest_items": [
+        {
+          "materialName": "FORESTRY_FRAMEPROVEN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_ALVEARY",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_ALVEARY",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_ENGINE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_HONEYEDSLICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "MAGICBEES_HIVE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "MAGICBEES_HIVE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_RESOURCES",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_RESOURCESTORAGE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_RESOURCESTORAGE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_GEARCOPPER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_APICULTURE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_APICULTURE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_BEEHIVES",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_BEEHIVES",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_FRAMEUNTREATED",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_ENGINE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GEARTIN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GRAFTER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_CRAFTINGMATERIAL",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GEARBRONZE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GEARCOPPER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_SCOOP",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "REDSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_IMPREGNATEDCASING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_PEAT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_HONEYEDSLICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_RESOURCES",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_RESOURCES",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_MOULDYWHEAT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_GEARBRONZE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORBIDDENMAGIC_TAINTFRUIT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKJAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMICTINKERER_KAMIRESOURCE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMICTINKERER_KAMIRESOURCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKCUSTOMPLANT",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORBIDDENMAGIC_MOBCRYSTAL",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORBIDDENMAGIC_NETHERSHARD",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORBIDDENMAGIC_NETHERSHARD",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMBOTTLETAINT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMLOOTBAG",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "THAUMCRAFT_WANDCASTING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKCUSTOMPLANT",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMTHAUMONOMICON",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 18,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMLOOTBAG",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMZOMBIEBRAIN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "THAUMCRAFT_WANDCASTING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_BLOCKCUSTOMPLANT",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMTHAUMONOMICON",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMRESOURCE",
+          "dataValue": 18,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMSHARD",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMNUGGET",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMLOOTBAG",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "THAUMCRAFT_ITEMZOMBIEBRAIN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 19,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_SUPERTRAVELBELT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_DREAMWOOD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_OVERGROWTHSEED",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "SHADOWFOX_BOTANY_IRISSEEDS",
+          "dataValue": 16,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_MANATABLET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_RUNE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANAGUN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_OPENBUCKET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANACOOKIE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPREADER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 18,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_MANABOTTLE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_SPECIALFLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FLOWER",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER1",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_FERTILIZER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_DOUBLEFLOWER2",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOTANIA_MANARESOURCE",
+          "dataValue": 17,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "DIAMOND",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_DESERTNOVA",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_AUM",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_TARMAROOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "RED_ROSE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "GOLD_INGOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_WAKEBLOOM",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_SPELLPARCHMENT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_BLUECHALK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_LESSERFOCUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_STANDARDFOCUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "INK_SACK",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOOK_AND_QUILL",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_MANACAKE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 16,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 80,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 150,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 40,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 92,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 38,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 128,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_LOUSE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_POPPET",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "NETHER_STAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "GLOWSTONE_DUST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_SPANISHMOSS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_EMBERMOSS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 24,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 74,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 66,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 149,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 148,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 157,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 82,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 67,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 39,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "DIAMOND",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "NETHER_STALK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BLAZE_ROD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "GHAST_TEAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "EMERALD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_GLINTWEED",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "LEATHER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSMANDRAKE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "GOLD_INGOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_GARLIC",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSBELLADONNA",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SPIDER_EYE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FLINT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SAPLING",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SAPLING",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SAPLING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "INK_SACK",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "INK_SACK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSARTICHOKE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "REDSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "IRON_INGOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FEATHER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSWOLFSBANE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 25,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 27,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 102,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_WITCHSAPLING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_WITCHSAPLING",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_WITCHSAPLING",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSSNOWBELL",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "STRING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SULPHUR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_RUNEOFSELFSACRIFICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOCKCRYSTALBELLJAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOODSOCKET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_DEMONBLOODSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_MASTERSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_ALCHEMICALWIZARDRYBLOODRUNE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_RUNEOFSACRIFICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "NETHER_STAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_DEMONICSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_SPEEDRUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_AETHER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_MAGICALES",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_INCENDIUM",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_TENNEBRAE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_SANCTUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_TERRAE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_AQUASALUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "AWWAYOFTIME_EMPTYSOCKET",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_MUNDANEPOWERCATALYST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_RITUALSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_IMBUEDSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOODMAGICBASEALCHEMYITEMS",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLOODMAGICBASEALCHEMYITEMS",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_MUNDANELENGTHENINGCATALYST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_WEAKBLOODSHARD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_CRYSTALLOS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "AWWAYOFTIME_SIMPLECATALYST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_BLANKSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_STANDARDBINDINGAGENT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_REINFORCEDSLATE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_WEAKBINDINGAGENT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "AWWAYOFTIME_ALCHEMICALWIZARDRYBLOODRUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "GUIDEAPI_ITEMGUIDEBOOK",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "GUIDEAPI_ITEMGUIDEBOOK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        }
+      ],
+      "name": "Random",
+      "description": "§7Find chests with different\n§7kinds of loot in them while mining. Includes all LC mods\u0027 loot\n\n§8Requires§c DONOR RANK",
+      "icon_In_GUI": "CHEST"
+    },
+    {
+      "number_of_items_to_spawn_in_chest": 3,
+      "chance_of_chest_spawning": 10,
+      "chest_items": [
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "DIAMOND",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_DESERTNOVA",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_AUM",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_TARMAROOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ESSENCE",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "RED_ROSE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_ITEMORE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "GOLD_INGOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_WAKEBLOOM",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "ARSMAGICA2_SPELLPARCHMENT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_BLUECHALK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_LESSERFOCUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_STANDARDFOCUS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "INK_SACK",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BOOK_AND_QUILL",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_MANACAKE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 5,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 8,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 9,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 11,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 12,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 13,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "ARSMAGICA2_RUNE",
+          "dataValue": 16,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        }
+      ],
+      "name": "ArsMagica",
+      "description": "§7Find chests with different\n§7kinds of loot in them while mining\n\n§8Requires§c DONOR RANK",
+      "icon_In_GUI": "CHEST"
+    },
+    {
+      "number_of_items_to_spawn_in_chest": 3,
+      "chance_of_chest_spawning": 10,
+      "chest_items": [
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 80,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 150,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 40,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 92,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 38,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 128,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_LOUSE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "WITCHERY_POPPET",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "NETHER_STAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "GLOWSTONE_DUST",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_SPANISHMOSS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_EMBERMOSS",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 24,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 10,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 74,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 66,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 149,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 148,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 15,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 157,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 82,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 67,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 39,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "DIAMOND",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "NETHER_STALK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "BLAZE_ROD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "GHAST_TEAR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "EMERALD",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "WITCHERY_GLINTWEED",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "LEATHER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSMANDRAKE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "GOLD_INGOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_GARLIC",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSBELLADONNA",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SPIDER_EYE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FLINT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SAPLING",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SAPLING",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SAPLING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "INK_SACK",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "INK_SACK",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSARTICHOKE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "REDSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "IRON_INGOT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FEATHER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSWOLFSBANE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 14,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 25,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 27,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_INGREDIENT",
+          "dataValue": 102,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "BONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_WITCHSAPLING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_WITCHSAPLING",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_WITCHSAPLING",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "WITCHERY_SEEDSSNOWBELL",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "STRING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "SULPHUR",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        }
+      ],
+      "name": "Witchery",
+      "description": "§7Find chests with different\n§7kinds of loot in them while mining\n\n§8Requires§c DONOR RANK",
+      "icon_In_GUI": "CHEST"
+    },
+    {
+      "number_of_items_to_spawn_in_chest": 2,
+      "chance_of_chest_spawning": 10,
+      "chest_items": [
+        {
+          "materialName": "FORESTRY_FRAMEPROVEN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_ALVEARY",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_ALVEARY",
+          "dataValue": 7,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_ENGINE",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_HONEYEDSLICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "MAGICBEES_HIVE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "MAGICBEES_HIVE",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_RESOURCES",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_RESOURCESTORAGE",
+          "dataValue": 3,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_RESOURCESTORAGE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 10
+        },
+        {
+          "materialName": "FORESTRY_GEARCOPPER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_APICULTURE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_APICULTURE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_BEEHIVES",
+          "dataValue": 4,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_BEEHIVES",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_FRAMEUNTREATED",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_ENGINE",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GEARTIN",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GRAFTER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_CRAFTINGMATERIAL",
+          "dataValue": 6,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GEARBRONZE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 35
+        },
+        {
+          "materialName": "FORESTRY_GEARCOPPER",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_SCOOP",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "REDSTONE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_IMPREGNATEDCASING",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_PEAT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_HONEYEDSLICE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_RESOURCES",
+          "dataValue": 2,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_RESOURCES",
+          "dataValue": 1,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_MOULDYWHEAT",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        },
+        {
+          "materialName": "FORESTRY_GEARBRONZE",
+          "dataValue": 0,
+          "size_of_stack": 1,
+          "chance_of_spawning": 60
+        }
+      ],
+      "name": "Forestry",
+      "description": "§7Find chests with different\n§7kinds of loot in them while mining\n\n§8Requires§c DONOR RANK",
+      "icon_In_GUI": "CHEST"
+    }
+  ],
+  "automSmelt": {
+    "ingotByOre": {
+      "IRON_ORE": "IRON_INGOT",
+      "IRON_GOLD": "IRON_INGOT",
+      "GOLD_ORE": "GOLD_INGOT"
+    },
+    "name": "AutoSmelt",
+    "description": "§7Smelts your ores instantly\n\n§8Requires§a VIP§e+",
+    "icon_In_GUI": "COAL"
+  },
+  "spawners": {
+    "name": "Spawner",
+    "description": "§7Break spawners with your average pickaxe\n\n§8Requires§b MVP",
+    "icon_In_GUI": "MOB_SPAWNER"
+  }
+}

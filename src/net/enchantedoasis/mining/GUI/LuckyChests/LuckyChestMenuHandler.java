@@ -3,6 +3,7 @@
  import java.util.HashMap;
  import net.enchantedoasis.mining.Ability;
  import net.enchantedoasis.mining.GUI.Ability.AbilityMenu;
+import net.enchantedoasis.mining.MiningExpertise;
  import org.bukkit.ChatColor;
  import org.bukkit.entity.Player;
  import org.bukkit.event.EventHandler;
@@ -29,9 +30,11 @@
        case PICKUP_SOME: 
        case PICKUP_HALF: 
        case PICKUP_ONE: 
-         for (int i = 0; i < Ability.getAbilitiesList().size(); i++) {
-           if (((Ability)Ability.getAbilitiesList().get(Integer.valueOf(i))).getName().equalsIgnoreCase(ChatColor.stripColor(clicked.getItemMeta().getDisplayName()))) {
-             ((Ability)Ability.getAbilitiesList().get(Integer.valueOf(i))).clicked(playerexact, "mining");
+         for (int i = 0; i < MiningExpertise.instance.config.getAbilities().size(); i++) {
+           if ((MiningExpertise.instance.config.getAbilities().get(i))
+                   .getName()
+                   .equalsIgnoreCase(ChatColor.stripColor(clicked.getItemMeta().getDisplayName()))) {
+             (MiningExpertise.instance.config.getAbilities().get(i)).clicked(playerexact, "mining");
            }
          }
          if (ChatColor.stripColor(clicked.getItemMeta().getDisplayName()).equalsIgnoreCase("Upgrade your chance")) {

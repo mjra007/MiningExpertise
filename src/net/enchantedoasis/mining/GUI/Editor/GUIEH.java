@@ -13,10 +13,13 @@ public class GUIEH implements Listener{
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent e) {
+
         if(e.getInventory().getHolder() instanceof IGUI) {
-            e.setCancelled(true);
+            if(e.getInventory().getName().contains("Add items ") == false){
+                e.setCancelled(true);
+            }
             IGUI gui = (IGUI) e.getInventory().getHolder();
-            gui.onGUIClick((Player)e.getWhoClicked(), e.getRawSlot(), e.getCurrentItem(), e.getAction());
-        }  
+            gui.onGUIClick((Player)e.getWhoClicked(), e.getRawSlot(), e.getCurrentItem(), e.getAction(), e.getInventory(), e);
+        }
     }
 }

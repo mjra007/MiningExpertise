@@ -1,6 +1,6 @@
 main: net.enchantedoasis.mining.MiningExpertise
 version: 1.0.0
-name: MiningExpertise
+name: MiningExpertiser
 commands:
    mining:
       description: Adding mining items.

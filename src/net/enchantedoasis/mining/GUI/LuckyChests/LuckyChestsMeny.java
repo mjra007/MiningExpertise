@@ -5,6 +5,7 @@
  import java.util.List;
  import net.enchantedoasis.mining.Ability;
  import net.enchantedoasis.mining.GUI.Ability.AbilityMenu;
+import net.enchantedoasis.mining.MiningExpertise;
  import net.enchantedoasis.userData.User;
  import org.bukkit.Bukkit;
  import org.bukkit.ChatColor;
@@ -19,7 +20,7 @@
    public static Inventory luckychestsm = Bukkit.createInventory(null, 36, "Mining Expertise - LuckyChest");
    
    public static void createAllItems(Player player) {
-     HashMap<Integer, Ability> abilities = Ability.getAbilitiesList();
+     List<Ability> abilities = MiningExpertise.instance.config.getAbilities();
      for (int i = 0; i < abilities.size(); i++)
      {
  

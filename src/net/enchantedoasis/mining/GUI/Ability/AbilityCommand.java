@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.stream.Stream;
 import net.enchantedoasis.mining.Ability;
 import net.enchantedoasis.mining.GUI.Editor.ItemsDisplay;
+import net.enchantedoasis.mining.GUI.Editor.MainEditor;
+import net.enchantedoasis.mining.MiningExpertise;
 import net.enchantedoasis.mining.ability.LuckyChest;
  import org.bukkit.command.Command;
  import org.bukkit.command.CommandExecutor;
@@ -23,47 +25,13 @@ import net.enchantedoasis.mining.ability.LuckyChest;
 //       new Scanner(args, playerSender.getLocation(), 6);
 //       return true;
 //     }
-      Collection<Ability> abilities = Ability.getAbilitiesList().values();
-       Stream<LuckyChest> luckyChests = abilities.stream().filter(s -> s instanceof LuckyChest).map(s -> (LuckyChest) s);
+      Collection<Ability> abilities = MiningExpertise.instance.config.getAbilities();
 
-       if (args[0] != null) {
+       if (args[0] != null && playerSender.isOp()) {
            switch (args[0]) {
-               case "BloodMagic":
-                   luckyChests.filter(s -> s.getName().equalsIgnoreCase("BloodMagic"))
-                           .findFirst()
-                           .ifPresent(s -> new ItemsDisplay(s.getName(),
-                                   s.getAllItems()).openInventory(playerSender));
-                   break;
-               case "Thaumcraft":
-                   luckyChests.filter(s -> s.getName().equalsIgnoreCase("Thaumcraft"))
-                           .findFirst()
-                           .ifPresent(s -> new ItemsDisplay(s.getName(),
-                                   s.getAllItems()).openInventory(playerSender));
-                   break;
-               case "Botania":
-                   luckyChests.filter(s -> s.getName().equalsIgnoreCase("Botania"))
-                           .findFirst()
-                           .ifPresent(s -> new ItemsDisplay(s.getName(),
-                                   s.getAllItems()).openInventory(playerSender));
-                   break;
-               case "Witchery":
-                   luckyChests.filter(s -> s.getName().equalsIgnoreCase("Witchery"))
-                           .findFirst()
-                           .ifPresent(s -> new ItemsDisplay(s.getName(),
-                                   s.getAllItems()).openInventory(playerSender));
-                   break;
-               case "Forestry":
-                   luckyChests.filter(s -> s.getName().equalsIgnoreCase("Forestry"))
-                           .findFirst()
-                           .ifPresent(s -> new ItemsDisplay(s.getName(),
-                                   s.getAllItems()).openInventory(playerSender));
-                   break;
-               case "ArsMagica2":
-                   luckyChests.filter(s -> s.getName().equalsIgnoreCase("ArsMagica2"))
-                           .findFirst()
-                           .ifPresent(s -> new ItemsDisplay(s.getName(),
-                                   s.getAllItems()).openInventory(playerSender));
-                   break;
+               case "editor":
+                   playerSender.openInventory(new MainEditor().getInventory());
+                   return true;
           }
       }
       

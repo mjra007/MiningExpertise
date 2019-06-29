@@ -112,6 +112,12 @@ public class WeightedList<E> {
 		this.total = 0.0;
 	}
 	
+        
+        
+        public double getTotal(){
+            return total;
+        }
+        
 	@Override
 	public String toString() {
 		return "WeightedRandomSample [map=" + map + ", total=" + total + "]";

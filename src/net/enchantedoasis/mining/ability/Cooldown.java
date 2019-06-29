@@ -39,6 +39,7 @@ public class Cooldown {
         Cooldown cooldown = getCooldown(id, cooldownName);
         int f = -1;
         if(cooldown!=null){
+            System.out.print("Not null");
             long now = System.currentTimeMillis();
             long cooldownTime = cooldown.start;
             int totalTime = cooldown.timeInSeconds;

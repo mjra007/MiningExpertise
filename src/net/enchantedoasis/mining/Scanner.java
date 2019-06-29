@@ -1,11 +1,9 @@
 package net.enchantedoasis.mining;
  
- import java.io.PrintStream;
 import java.util.ArrayList;
  import java.util.HashMap;
  import java.util.List;
  import java.util.Map;
- import java.util.Map.Entry;
  import org.bukkit.Location;
  import org.bukkit.Material;
 import org.bukkit.block.Chest;
@@ -79,8 +77,8 @@ import org.bukkit.block.Chest;
            list.add(finalString);
        }
      System.out.println(list);
-     MiningExpertise.p.getConfig().set(this.path, list);
-     MiningExpertise.p.saveConfig();
+     MiningExpertise.instance.getConfig().set(this.path, list);
+     MiningExpertise.instance.saveConfig();
    }
    
    public static Object getKeyFromValue(Map hm, Object value) {

@@ -2,11 +2,11 @@ package net.enchantedoasis.mining.GUI.Editor;
 
 import java.util.ArrayList;
 import net.enchantedoasis.mining.WeightedItemStack;
-import net.enchantedoasis.mining.WeightedList;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryAction;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -35,7 +35,7 @@ public class ItemsDisplay implements IGUI {
     
     @Override
     public void onGUIClick(Player whoClicked, int slot, ItemStack clickedItem
-            , InventoryAction action) {
+            , InventoryAction action, Inventory inv,InventoryClickEvent e) {
         
         //Checks whether an item was dragged into the inventory
         //Adds item to item list and forces gui refresh
@@ -46,7 +46,7 @@ public class ItemsDisplay implements IGUI {
             
             ItemStack itemInPlayersHand = whoClicked.getItemInHand();
             
-            WeightedItemStack item = new WeightedItemStack(itemInPlayersHand.getType(),
+            WeightedItemStack item = new WeightedItemStack(itemInPlayersHand.getType().name(),
                     itemInPlayersHand.getDurability(),
                     Integer.valueOf(itemInPlayersHand.getAmount()).shortValue());
             
@@ -143,7 +143,7 @@ public class ItemsDisplay implements IGUI {
                    item.getDurability()==stack.getDurability()){
               
                if(delete){
-                   items.set(index, new WeightedItemStack(Material.AIR, (short)0,(short)1));
+                   items.set(index, new WeightedItemStack(Material.AIR.name(), (short)0,(short)1));
                }else if(decrease) {
                    if(weightsORstacksize){
                     item.setWeight((item.getQuantity()-1));
@@ -162,7 +162,6 @@ public class ItemsDisplay implements IGUI {
                }
            }
        }
-    }
     
     public void openInventory(Player player)
     {

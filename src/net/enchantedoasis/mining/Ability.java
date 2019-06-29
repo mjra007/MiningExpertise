@@ -1,5 +1,6 @@
  package net.enchantedoasis.mining;
  
+import com.google.gson.annotations.Expose;
  import java.util.HashMap;
  import net.enchantedoasis.mining.GUI.Ability.AbilityMenu;
  import net.enchantedoasis.userData.User;
@@ -8,27 +9,20 @@
  import org.bukkit.entity.Player;
  
  public class Ability
- {
+ {   
+   @Expose
    String name;
+   @Expose
    String description;
-   Material icon = Material.ENDER_CHEST;
-   static Integer counter = Integer.valueOf(0);
-   Integer id;
-   static HashMap<Integer, Ability> abilities = new HashMap();
-   
-   public Ability(String n, String d, Material icon2) {
-     this.id = counter;
+   @Expose
+   String icon_In_GUI = Material.ENDER_CHEST.toString();
+
+   public Ability(String n, String d, String icon2) {
      this.name = n;
      this.description = d;
-     this.icon = icon2;
-     abilities.put(this.id, this);
-     counter = Integer.valueOf(counter.intValue() + 1);
+     this.icon_In_GUI = icon2;
    }
-   
-   public static HashMap<Integer, Ability> getAbilitiesList() {
-     return abilities;
-   }
-   
+
    public void setName(String newName) {
      this.name = newName;
    }
@@ -46,39 +40,40 @@
    }
    
    public Material getIcon() {
-     return this.icon;
+     return Material.getMaterial(this.icon_In_GUI);
    }
    
-   public void clicked(Player p, String permission) {
-     User userData = (User)User.getUserData().get(p.getUniqueId());
+   public void clicked(Player player, String permission) {
+     User userData = (User)User.getUserData().get(player.getUniqueId());
      if(userData.getAbilitySelected().equals(this.getName())) {
 	  			userData.setAbilitySelected("");
-	  			p.sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] " + ChatColor.GRAY + getName() + " was unselected");
+	  			player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] " + ChatColor.GRAY + getName() + " was unselected");
 	  			return;
  			 }
      if (userData.getAbilitiesOwned().contains(ChatColor.stripColor(this.name))) {
        userData.setAbilitySelected(this.name);
-       p.sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] " + ChatColor.GRAY + this.name + " was selected");
-     } else if (p.hasPermission(permission))
+       player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] " + ChatColor.GRAY + this.name + " was selected");
+     } else if (player.hasPermission(permission))
      {
        userData.addAbilityOwned(this.name);
        userData.setAbilitySelected(this.name);
-       p.sendMessage(MiningExpertise.defaultsymbol + ChatColor.GRAY + this.name + " was acquired");
-       p.sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] " + ChatColor.GRAY + this.name + " was selected");
+       player.sendMessage(MiningExpertise.defaultsymbol + ChatColor.GRAY + this.name + " was acquired");
+       player.sendMessage(ChatColor.GRAY + "[" + ChatColor.GREEN + "+" + ChatColor.GRAY + "] " + ChatColor.GRAY + this.name + " was selected");
 
      }
      
  
  
-     AbilityMenu.bakeIt(p);
+     AbilityMenu.bakeIt(player);
    }
    
    public void bakeIt() {}
    
+   @Override
    public String toString()
    {
      return 
-       "Ability: " + this.name + " Description: " + this.description + " ID: " + this.id + " Icon: " + this.icon;
+       "Ability: " + this.name + " Description: " + this.description + " Icon: " + this.icon_In_GUI;
    }
  }
 

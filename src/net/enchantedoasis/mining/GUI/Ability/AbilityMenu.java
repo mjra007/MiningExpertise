@@ -4,6 +4,7 @@
  import java.util.HashMap;
  import java.util.List;
  import net.enchantedoasis.mining.Ability;
+import net.enchantedoasis.mining.MiningExpertise;
 import net.enchantedoasis.mining.ability.LuckyChest;
  import net.enchantedoasis.userData.User;
  import org.bukkit.Bukkit;
@@ -21,7 +22,7 @@ import net.enchantedoasis.mining.ability.LuckyChest;
    
    public static void createAllItems(Player player) {
      User user = (User)User.getUserData().get(player.getUniqueId());
-     HashMap<Integer, Ability> abilities = Ability.getAbilitiesList();
+     List<Ability> abilities = MiningExpertise.instance.config.getAbilities();
      int i2 = 1;
      for (int i = 0; i < abilities.size(); i++) {
        if (!(abilities.get(i) instanceof LuckyChest)) {

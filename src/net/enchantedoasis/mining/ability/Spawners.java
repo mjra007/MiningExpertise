@@ -1,8 +1,6 @@
  package net.enchantedoasis.mining.ability;
  
- import java.io.PrintStream;
- import java.util.HashMap;
- import java.util.List;
+;
  import net.enchantedoasis.mining.Ability;
  import net.enchantedoasis.mining.GUI.Ability.AbilityMenu;
  import net.enchantedoasis.mining.MiningExpertise;
@@ -15,7 +13,6 @@
  import org.bukkit.block.Block;
  import org.bukkit.block.BlockState;
  import org.bukkit.block.CreatureSpawner;
- import org.bukkit.entity.CreatureType;
  import org.bukkit.entity.Player;
  import org.bukkit.inventory.ItemStack;
  import org.bukkit.inventory.meta.ItemMeta;
@@ -24,11 +21,12 @@
  public class Spawners
    extends Ability
  {
-   public Spawners(String n, String d, Material icon2)
+   public Spawners(String n, String d, String icon2)
    {
      super(n, d, icon2);
    }
    
+   @Override
    public void clicked(Player p, String permission) {
      User userData = (User)User.getUserData().get(p.getUniqueId());
      if (p.hasPermission("miningexpertise.spawner")) {
