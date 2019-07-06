@@ -24,7 +24,8 @@ public class ItemStackIncreaseGUI implements IGUI {
     private LuckyChest luckyChest;
     private String name;
     private int pageIndex = 0;
-
+    
+    
     public ItemStackIncreaseGUI(LuckyChest luckyChest) {
         this.luckyChest = luckyChest;
         name = "Change the item stack:";
@@ -38,7 +39,7 @@ public class ItemStackIncreaseGUI implements IGUI {
 
                     switch (slot) {
                         case 50:
-                            if (pageIndex + 1 != getTotalNoOfPages() - 1) {
+                            if (pageIndex < getNoOfPages() - 1) {
                                 Utils.setInventory(inv, getInventory(++pageIndex)
                                         .getContents());
                             } else {
@@ -110,18 +111,26 @@ public class ItemStackIncreaseGUI implements IGUI {
         for (int indexOfInventory = 0; indexOfInventory < items.size(); indexOfInventory++) {
             WeightedItemStack item = items.get(indexOfInventory);
 
-            float percentage = (item.getWeight()  / (float) luckyChest.getWeightedList().getTotal());
+            float percentage = (item.getWeight() / (float) luckyChest.getWeightedList().getTotal());
             int oneInX = (int) Math.ceil(1 / percentage);
 
             Utils.createItem(item.toItemStack(), inv, indexOfInventory, item.toString()
                     + "\n§3You will find this item in §71 out of " + oneInX + " §7chests! \n§3Percentage: §7" + toPercentage(percentage) + " \n");
-       }
+        }
 
         Utils.createItem(Material.ARROW, inv, 50, "§bNext Page", "");
         Utils.createItem(Material.ARROW, inv, 49, "§bBack Page", "");
         Utils.createItem(Material.BONE, inv, 45, "§bGo back to the previous menu", "");
 
         return inv;
+    }
+
+    public int getNoOfPages() {
+        if (luckyChest.getAllItems().size() <= 45) {
+            return 1;
+        } else {
+            return (int) Math.ceil(luckyChest.getAllItems().size() / 45.0);
+        }
     }
 
     public List<WeightedItemStack> getItems(int page) {

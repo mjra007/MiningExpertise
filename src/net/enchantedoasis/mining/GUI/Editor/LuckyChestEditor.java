@@ -85,7 +85,7 @@ public class LuckyChestEditor implements IGUI {
         createItem(Material.ARROW, GUI, 40, "§dGo back!", "");
         createItem(Material.ENDER_PEARL, GUI,29, "§dChance of lucky Chest spawning", "§7LEFT-CLICK to increase chance\n§7RIGHT-CLICK to decrease chance" +"\n§3Chance Of Spawning A Chest: §7"+ luckyChest.chanceOfSpawningAChest()+"§7%");
         createItem(Material.ITEM_FRAME, GUI,33, "§dChange number of items in chest", "§7LEFT-CLICK to increase \n§7RIGHT-CLICK to decrease"
-                +"\n§3No of items to spawn: §7"+luckyChest.getNoOfItems()+"§7%");
+                +"\n§3No of items to spawn: §7"+luckyChest.getNoOfItems()+"§7");
         createItem(Material.CHEST, GUI, 31, "§dInformation",
                 "\n§aName: §7"+luckyChest.getName()+
                         "\n§aDescription: §7"+luckyChest.getDescription()

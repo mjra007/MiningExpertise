@@ -3,7 +3,6 @@
 import java.util.Collection;
 import java.util.stream.Stream;
 import net.enchantedoasis.mining.Ability;
-import net.enchantedoasis.mining.GUI.Editor.ItemsDisplay;
 import net.enchantedoasis.mining.GUI.Editor.MainEditor;
 import net.enchantedoasis.mining.MiningExpertise;
 import net.enchantedoasis.mining.ability.LuckyChest;

@@ -67,16 +67,13 @@ public class LuckyChest extends Ability {
     }
 
     public WeightedList<WeightedItemStack> getWeightedList() {
-        if (weightedListOfItems == null || weightedListOfItems.size() == 0) {
             weightedListOfItems = new WeightedList<>();
             chest_items.stream()
                     .forEach(Item -> {
                         weightedListOfItems.add(Item.getWeight(), Item);
                     });
             return weightedListOfItems;
-        } else {
-            return weightedListOfItems;
-        }
+       
     }
 
     public void changeItems(List<WeightedItemStack> items){
@@ -130,8 +127,9 @@ public class LuckyChest extends Ability {
 
     private ArrayList<ItemStack> getRandomItems(Integer noOfItems) {
         ArrayList<ItemStack> itemsForChest = new ArrayList<>();
+        WeightedList<WeightedItemStack> list = getWeightedList();
         for (int itemIndex = 0; itemIndex < noOfItems; itemIndex++) {
-            itemsForChest.add(getWeightedList().sampleWithoutReplacement().toItemStack());
+            itemsForChest.add(list.sampleWithReplacement().toItemStack());
         }
         return itemsForChest;
     }
